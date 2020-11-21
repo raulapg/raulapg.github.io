@@ -9,13 +9,13 @@ I am a junior at University of California, Riverside interested in learning anyt
 
 ## Education
 
-**University of California, Riverside**</br>
-Bachelor of Science - Business Administration, Concentration in Information Systems</br>
-Expected Graduation: June 2022</br>
+<br>**University of California, Riverside**</br>
+<br>Bachelor of Science - Business Administration, Concentration in Information Systems</br>
+<br>Expected Graduation: June 2022</br>
 
-**Los Medanos College**</br>
-Associate of Science - Business Administration</br>
-Graduated: May 2020</br>
-GPA: 4.0</br>
+<br>**Los Medanos College**</br>
+<br>Associate of Science - Business Administration</br>
+<br>Graduated: May 2020</br>
+<br>GPA: 4.0</br>
 
 ## Skills
