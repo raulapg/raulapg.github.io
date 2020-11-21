@@ -8,9 +8,11 @@ permalink: /about
 I am a junior at University of California, Riverside interested in learning anything related to analytics.
 
 ## Education
+
 <br>**University of California, Riverside**
 <br>Bachelor of Science - Business Administration, Concentration in Information Systems
 <br>Expected Graduation: June 2022
+
 <br>**Los Medanos College**
 <br>Associate of Science - Business Administration
 <br>Graduated: May 2020
