@@ -1,3 +1,3 @@
 ## About Me
 
-I am a third-year at University of California, Riverside studying Business Administration with a concentration in Information Systems. I am extremely charitable and help my little sister with her homework (Your welcome Carol).
+I am a third-year student at University of California, Riverside studying Business Administration with a concentration in Information Systems. I previously attended Los Medanos College where I received my Associate of Science in Business Administration, graduating with honors and a 4.0 GPA.
