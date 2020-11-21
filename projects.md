@@ -1,5 +1,6 @@
 ---
 title: Projects
+description: Check out my latest and greatest projects
 permalink: /projects
 ---
 ## My Projects
