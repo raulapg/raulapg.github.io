@@ -1,8 +1,21 @@
 ---
-title: About
+title: About Me
 description: Learn all about the man, the myth, the legend.
 permalink: /about
 ---
-## About
+## Summary
 
-I am a third-year student at University of California, Riverside studying Business Administration with a concentration in Information Systems. I previously attended Los Medanos College where I received my Associate of Science in Business Administration, graduating with honors and a 4.0 GPA.
+I am a junior at University of California, Riverside interested in learning anything related to analytics.
+
+## Education
+
+**University of California, Riverside**
+Bachelor of Science - Business Administration, Concentration in Information Systems
+Expected Graduation: June 2022
+
+**Los Medanos College**
+Associate of Science - Business Administration
+Graduated: May 2020
+GPA: 4.0
+
+## Skills
