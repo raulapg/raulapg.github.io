@@ -1,7 +1,7 @@
 ---
 title: Damage Calculator
 description: Damage calculator for Dungeons and Dragons
-permalink: /dndcalculator
+permalink: /projects/dndcalculator
 ---
 ## Dungeons and Dragons Damage Calculator
 
