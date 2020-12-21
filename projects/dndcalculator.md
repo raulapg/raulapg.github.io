@@ -5,7 +5,7 @@ permalink: /dndcalculator
 ---
 ## Dungeons and Dragons Damage Calculator
 
-{% highlight python %}
+```python
 import random
 
 def get_damage(attack, defense):
@@ -64,4 +64,4 @@ def main_menu():
     y += 1
 
 main_menu()
-{% endhiglight %}
+'''
