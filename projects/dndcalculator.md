@@ -5,8 +5,7 @@ permalink: /dndcalculator
 ---
 ## Dungeons and Dragons Damage Calculator
 
-```python
-import random
+```python import random
 
 def get_damage(attack, defense):
   """Get the value of damage based on roll strings."""
@@ -63,4 +62,4 @@ def main_menu():
 
     y += 1
 
-main_menu()
+main_menu() ```
