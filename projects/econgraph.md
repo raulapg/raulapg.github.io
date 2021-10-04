@@ -7,7 +7,7 @@ permalink: /projects/econgraph
 As part of my Intermediate Macroeconomics class, I was tasked with analyzing a concept covered in class using real world data. I decided to do an anaylsis on whether Okun's Law (a theory stating there is an inverse relation between real GDP growth and the unemployment rate) has held true in the United States since 2000 by creating a graph in Python to make it easier to understand the data.
 
 ## Process
-I started off by locating the datasets, which I ended up finding at the St. Louis Federal Reserve Bank's FRED. From there, I used the 
+I started off by locating the datasets at the St. Louis Federal Reserve Bank's FRED. From there, I used an API to 
 ```python
 from fredapi import Fred
 import pandas as pd
@@ -40,5 +40,6 @@ sns.regplot(x='Percentage Change in GDP', y='Change in Unemployment Rate',
             line_kws={'color':'red'}).set(title="Okun's Law")
 plt.show()
 ```
-
+The final result:
+![Okun's Law Quarterly 2000-2021.png](/projects/Okun's Law Quarterly 2000-2021.png)
 ## Conclusion
