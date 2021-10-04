@@ -1,6 +1,6 @@
 ---
-title: Economic Analysis
-description: Analyzing Okun's Law post 2000
+title: Economic Analysis of Okun's Law
+description: Analyzing Okun's Law since 2000
 permalink: /projects/econgraph
 ---
 ## Background
