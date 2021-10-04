@@ -10,8 +10,8 @@ permalink: /projects/flightdelay
 import pandas as pd
 import re
 
-flight_data = 'data\flights.csv'
-airport_data = 'data\AirportID_to_IATAID.csv'
+flight_data = 'data\\flights.csv'
+airport_data = 'data\\AirportID_to_IATAID.csv'
 flight_df = pd.read_csv(flight_data, dtype={'ORIGIN_AIRPORT': 'string', 'DESTINATION_AIRPORT': 'string'})
 airport_df = pd.read_csv(airport_data)
 
