@@ -41,5 +41,7 @@ sns.regplot(x='Percentage Change in GDP', y='Change in Unemployment Rate',
 plt.show()
 ```
 The final result:
+
+
 ![Okun's Law Quarterly 2000-2021.png](/projects/Okun's Law Quarterly 2000-2021.png)
 ## Conclusion
