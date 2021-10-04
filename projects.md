@@ -6,4 +6,5 @@ permalink: /projects
 ## My Projects
 These are some of the projects that I have created:
 
-- Hello
++ [Economic Analysis of Okun's Law](/projects/econgraph)
++ Hello
