@@ -1,6 +1,6 @@
 ---
 title: Economic Analysis of Okun's Law
-description: Analyzing Okun's Law since 2000
+description: Analyzing the correlation between real GDP and unemployment since 2000
 permalink: /projects/econgraph
 ---
 ## Background
