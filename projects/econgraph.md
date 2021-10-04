@@ -47,4 +47,5 @@ plt.show()
 The final result:
 
 ![Okun's Law Quarterly 2000-2021.png](/projects/Okun's%20Law%20Quarterly%202000-2021.png)
-## Conclusion
+## Analysis and Conclusion
+With most of the data points being clustered around (0, 0), we can see that there wasn't much of a change quarter to quarter since 2000, with the two noticeable exceptions of (-9.0, 11.3), for April 1, 2020, and (7.5, -4.6), for July 1, 2020. These show the initial effects of the COVID-19 pandemic, a massive decrease in real GDP and increase in the unemployment rate, and the quick economic recovery, with real GDP almost returning to prepandemic levels and the unemployment rate making huge strides in its recovery. There were a few data points that were not in line with Okun’s Law. For example, the data points (0.9, 0.4), for January 1, 2001, and (1.1, 0.5), for October 1, 2009, show a simultaneous increase in real GDP and the unemployment rate. To get a more certain answer, I also calculated the correlation coefficient to be -0.88, signifying a very strong association between the two variables. This meaning that Okun's Law has held true since 2000.
