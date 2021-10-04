@@ -42,5 +42,5 @@ plt.show()
 ```
 The final result:
 
-![Okun's Law Quarterly 2000-2021.png](/projects/Okun's Law Quarterly 2000-2021.png)
+![Okun's Law Quarterly 2000-2021.png](/projects/Okun's%20Law%20Quarterly%202000-2021.png)
 ## Conclusion
