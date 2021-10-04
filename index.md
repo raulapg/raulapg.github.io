@@ -1,6 +1,6 @@
 ---
 title: Home
-description: About Me
+description: About me
 ---
 ## Welcome to My Website
 
