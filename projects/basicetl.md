@@ -23,7 +23,7 @@ c.execute("""CREATE TABLE case_shiller (
     date date,
     cs_index numeric(7, 3))""")
 conn.commit()
-engine = create_engine('postgresql+psycopg2://postgres:Gibraltar@localhost:5432/experiments')
+engine = create_engine('postgresql+psycopg2://postgres:genericpw@localhost:1111/db')
 cs_df.to_sql('case_shiller', engine, if_exists='replace', index=False)
 
 c.execute('SELECT * FROM case_shiller')
