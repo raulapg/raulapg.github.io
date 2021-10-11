@@ -35,5 +35,5 @@ The final result:
 
 {{< rawhtml >}}
 <iframe src="https://public.tableau.com/views/Case-ShillerIndex_16339121605040/Cash-ShillerIndexSince1987?:showVizHome=no&:embed=true"
- width="645" height="955"></iframe>
+ width="854" height="480"></iframe>
 {{< /rawhtml >}}
