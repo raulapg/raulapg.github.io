@@ -7,4 +7,5 @@ permalink: /projects
 These are some of the projects that I have created:
 
 [Economic Analysis of Okun's Law](/projects/econgraph)
+
 [Basic ETL Experiment](/projects/basicetl)
