@@ -1,6 +1,6 @@
 ---
 title: Excel Automation
-description: Helping my brother's small business by partially automating process of searching for business expenses
+description: Partially automating process of searching for business expenses for brother's small business
 permalink: /projects/excelautomation
 ---
 ## Background
