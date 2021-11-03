@@ -24,3 +24,4 @@ for i in range(1, sheet.max_row + 1):
         sheet.delete_rows(i)
 
 wb.save('checking_statement.xlsx')
+```
