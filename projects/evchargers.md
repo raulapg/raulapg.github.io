@@ -11,7 +11,7 @@ import requests
 import json
 import pandas as pd
 
-url = 'https://developer.nrel.gov/api/alt-fuel-stations/v1.json?api_key=&status=E&access=public&fuel_type=ELEC'
+url = "https://developer.nrel.gov/api/alt-fuel-stations/v1.json?api_key=abc123&status=E&access=public&fuel_type=ELEC"
 
 api_response = requests.get(url)
 stations = json.loads(api_response.text)
