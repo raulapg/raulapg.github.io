@@ -45,8 +45,8 @@ for i in range(len(df["Connector Types"])):
     df.iloc[i, 16] = "CHADEMO" in df.iloc[i, 13]
     df.iloc[i, 17] = "J1772" in df.iloc[i, 13]
 ```
+Lastly, I handled any null values in the charging speed columns by setting them to zero; handled any other values in other columns by setting them to N/A, dropped the Connector Types column, since it was no longer useful and would just take up space; and then saved the dataframe to a CSV file that ArcGIS Online would be able to read.
 ```python
-
 df["DCFC Chargers"] = df["DCFC Chargers"].fillna(0)
 df["Level 2 Chargers"] = df["Level 2 Chargers"].fillna(0)
 df["Level 1 Chargers"] = df["Level 1 Chargers"].fillna(0)
@@ -54,7 +54,7 @@ df = df.fillna("N/A")
 df = df.drop(["Connector Types"], axis=1)
 df.to_csv("ev_chargers.csv", index=False)
 ```
-
+## The Final Result
 {{< rawhtml >}}
 <iframe src="https://experience.arcgis.com/experience/167d2d53da934f8eb76f47dd52b8ae6c/"
  width="854" height="480"></iframe>
