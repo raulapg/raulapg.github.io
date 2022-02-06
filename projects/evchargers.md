@@ -4,7 +4,7 @@ description: Map of EV Chargers in the U.S. created using Python and ArcGIS Onli
 permalink: /projects/evchargers
 ---
 ## Background
-
+For this project, I wanted to expand my skills working on APIs from my last ETL project, while also creating something more useful than my last chart.
 ## Process
 ```python
 import requests
