@@ -55,8 +55,9 @@ for row in rows:
     cols = [ele.getText() for ele in cols]
     data.append([ele for ele in cols])
 
-proj_df = pd.DataFrame(data, columns=["Use Type", "Project Name", "Project Number", "Location", "Description", "Status",
-                                      "Applicant", "Plans", "Project Description", "Other"])
+proj_df = pd.DataFrame(data, columns=["Use Type", "Project Name", "Project Number", "Location",
+                                      "Description", "Status", "Applicant", "Plans",
+                                      "Project Description", "Other"])
 proj_df = proj_df.drop(["Plans", "Project Description", "Other"], axis=1)
 #proj_df = pd.read_csv("test.csv")
 proj_df["APN"] = ""
@@ -81,7 +82,8 @@ antioch_map = folium.Map(location=[37.9755272, -121.8215628],
 
 for index, row in proj_df.iterrows():
     folium.Marker(location=[row["Latitude"], row["Longitude"]],
-                  tooltip=tooltip(row["Project Name"], row["Status"], row["Description"], row["Applicant"]),
+                  tooltip=tooltip(row["Project Name"], row["Status"], row["Description"],
+                                  row["Applicant"]),
                   ).add_to(antioch_map)
 
 antioch_map.save("antioch_map.html")
