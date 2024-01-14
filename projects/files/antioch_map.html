@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fb75a35b1f5c86249e902662e630cf55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fb75a35b1f5c86249e902662e630cf55" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fb75a35b1f5c86249e902662e630cf55 = L.map(
+                "map_fb75a35b1f5c86249e902662e630cf55",
+                {
+                    center: [37.9755272, -121.8215628],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ce306e3f59b569c4878c7f356547de0b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ce306e3f59b569c4878c7f356547de0b.addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            var marker_3be81d056d9371e159075fcf0e436dfc = L.marker(
+                [37.99980118819751, -121.84128863936007],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_3be81d056d9371e159075fcf0e436dfc.bindTooltip(
+                `<div>
+                     Project Name: 2615 Somersville Rd. LLC<br>Status: Under Construction<br>Description: Cannabis Retail<br>Applicant: 2615 Somersville Rd. LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b449c1e53b66d24bc87638fe32b2e10e = L.marker(
+                [38.01596188463707, -121.81406920013528],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_b449c1e53b66d24bc87638fe32b2e10e.bindTooltip(
+                `<div>
+                     Project Name: 300 G Street Cannabis Dispensary<br>Status: Approved, City Council<br>Description: Use Permit application for a Commercial Retail Cannabis Dispensary<br>Applicant: 300 G St / SR Ventures LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aea8311fbeaa7feba4ee6a0fc9c12547 = L.marker(
+                [37.96829340940825, -121.7338078345976],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_aea8311fbeaa7feba4ee6a0fc9c12547.bindTooltip(
+                `<div>
+                     Project Name: 5020 Slatten Ranch Townhomes<br>Status: Processing<br>Description: SB 330 Preliminary Application, Vesting Tentative Map for Condominium Purposes and Design Review for 138 unit townhome project.<br>Applicant: Kathryn Watt
+DeNova Homes
+1500 Willow Pass Road
+Concord, CA 94520
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00be79af2766b431a813861326648356 = L.marker(
+                [38.00543446530372, -121.75851976504968],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_00be79af2766b431a813861326648356.bindTooltip(
+                `<div>
+                     Project Name: ACORN III Self-Storage<br>Status: Processing<br>Description: GPA / Rezone previous PD-18-02 to add subsection C's Development Standards and Approved Uses to Subsection A and Subsection B. Also add Subsection B's uses onto Subsection C, limited in that only a single self storage can be complete on the entire project.<br>Applicant: Vince Moita
+Acorn Self Storage III
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f21a69ff3ebe2a0065b90e23468ffafe = L.marker(
+                [38.01342952688075, -121.77595641224138],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_f21a69ff3ebe2a0065b90e23468ffafe.bindTooltip(
+                `<div>
+                     Project Name: AMPORTS<br>Status: Under Construction<br>Description: New processing facility for delivery and storage of vehicles and upgrade of existing dock<br>Applicant: Ben Buben
+AMPORTS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b061a2dbd73ec4d6b5e27f86ebeb490f = L.marker(
+                [37.99989678951985, -121.80554144828024],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_b061a2dbd73ec4d6b5e27f86ebeb490f.bindTooltip(
+                `<div>
+                     Project Name: Chevron Hydrogen Dispensing<br>Status: Processing<br>Description: Modification of the
+existing facility to incorporate Hydrogen (H2) fueling stations.<br>Applicant: Zoe Dascalos
+Stantec
+5500 Ming Avem Suite 400
+Bakersfield, CA 93309
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3f9804f92252f0f5a8fb141222cf90c = L.marker(
+                [37.956887119708114, -121.75698289021892],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_b3f9804f92252f0f5a8fb141222cf90c.bindTooltip(
+                `<div>
+                     Project Name: Chick-Fil-A<br>Status: Approved, Planning Commission<br>Description: New development of a Chik-Fil-A restaurant with drive through<br>Applicant: Ed Hale
+4G Development & Consulting
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94b00e7602c125f5f0dce8055db871b3 = L.marker(
+                [37.95102396343312, -121.75521566960586],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_94b00e7602c125f5f0dce8055db871b3.bindTooltip(
+                `<div>
+                     Project Name: Cielo at Sand Creek<br>Status: Under Construction<br>Description: Revisions to amenity center; reduce clubhouse, remove fitness center, bocci ball, pickle ball and community garden. Add tot lot & Monument Wall. Revise Landscaping.<br>Applicant: Talli Robinson
+Century Communities 
+900 E. Hamilton Ave, Suite 500
+Campbell, CA 95008
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d751db2033c4f8c5bc2734d257381d56 = L.marker(
+                [38.01180934742662, -121.83781554568398],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_d751db2033c4f8c5bc2734d257381d56.bindTooltip(
+                `<div>
+                     Project Name: Cookies Cannabis Dispensary<br>Status: Approved, City Council<br>Description: Commercial Cannabis Retail<br>Applicant: Bakery Antioch, Inc.
+4400 MacArthur Blvd, Suite 970
+Newport Beach, CA 92660
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b96746c884b13eef07a547b5dd47c711 = L.marker(
+                [38.00963613167302, -121.84004344697574],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_b96746c884b13eef07a547b5dd47c711.bindTooltip(
+                `<div>
+                     Project Name: Costco Carwash<br>Status: Processing<br>Description: New freestanding carwash at Costco<br>Applicant: Costco Wholesale c/o Barghausen Consulting Engineers, Inc.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_745304ff80f1f966c6cc0fcbd0803995 = L.marker(
+                [38.00752155462119, -121.7604056301503],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_745304ff80f1f966c6cc0fcbd0803995.bindTooltip(
+                `<div>
+                     Project Name: DECA East Building
+18th St Development<br>Status: Scheduled for Hearing<br>Description: Building EAST: General Plan, Specific Plan, Planned Development, Use Permit, & Design Review for a proposed 424,149 sf industrial building; 1 floor with 10,000 sf of mezzanine and associated parking, drive aisle, and landscape. The project is proposed to be built in one phase.<br>Applicant: Antioch 18th St Owner II, LLC
+201 Spear St
+San Francisco,  CA  94105
+3125764291
+daniel.sachs@decaco.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4186067230a8661392a0513230b086f2 = L.marker(
+                [38.00743051415451, -121.76604664674218],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_4186067230a8661392a0513230b086f2.bindTooltip(
+                `<div>
+                     Project Name: DECA West Building
+18th St Development<br>Status: Scheduled for Hearing<br>Description: Building WEST:  Planned Development, Use Permit, & Design Review for a proposed 437,537 sf industrial building with 10,00 sf of mezzanine, associated parking, drive aisles, and landscape. Proposed to be built in one phase.<br>Applicant: Antioch 18th St Owner II, LLC
+201 Spear St
+San Francisco,  CA  94105
+3125764291
+daniel.sachs@decaco.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a75cf5a811e0dee81cb75a93fc01d47c = L.marker(
+                [38.00369134235049, -121.83985773168824],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_a75cf5a811e0dee81cb75a93fc01d47c.bindTooltip(
+                `<div>
+                     Project Name: Delta Bowl Billboard<br>Status: Approved, Planning Commission<br>Description: New dual sided digital billboard<br>Applicant: Alex Belenson
+Alex@fosterinterstate.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b113e1632bf74a8bc6f933e75087a173 = L.marker(
+                [38.01141321875357, -121.79307096713794],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_b113e1632bf74a8bc6f933e75087a173.bindTooltip(
+                `<div>
+                     Project Name: Delta Courtyard Apartments<br>Status: Approved, Planning Commission<br>Description: 2-Building Apartment Complex w/ 74 total units<br>Applicant: Mike Serpa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4787630be0d625ef5d609c30cedf918 = L.marker(
+                [38.01203240986669, -121.83343764046204],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_c4787630be0d625ef5d609c30cedf918.bindTooltip(
+                `<div>
+                     Project Name: Delta Distribution<br>Status: Under Construction<br>Description: Wholesale Cannabis Distribution<br>Applicant: Rick Hoke
+2101 W. 10th Street, Suite H
+Antioch, CA 94509
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3771b6031987703aec2a5eb58e92e642 = L.marker(
+                [38.01203240986669, -121.83343764046204],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_3771b6031987703aec2a5eb58e92e642.bindTooltip(
+                `<div>
+                     Project Name: Delta Labs<br>Status: Approved, City Council<br>Description: Operation of a non-hydrocarbon extraction lab that produces high quality THC concentrate for sale within the CA commercial Cannabis market.<br>Applicant: Delta Labs
+Rick Hoke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f255a98d47a167cee194befe46e580d5 = L.marker(
+                [38.01203240986669, -121.83343764046204],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_f255a98d47a167cee194befe46e580d5.bindTooltip(
+                `<div>
+                     Project Name: Delta Nursery<br>Status: Under Construction<br>Description: Commercial Cannabis Nursery<br>Applicant: Richard Hoke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_799483301675e12893661bbe2dac30e6 = L.marker(
+                [37.9681021181252, -121.78551011935096],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_799483301675e12893661bbe2dac30e6.bindTooltip(
+                `<div>
+                     Project Name: Ducky’s Car Wash<br>Status: Approved, Planning Commission<br>Description: Car Wash<br>Applicant: Ducky’s Car Wash
+Antioch Car Wash LLC
+4850 Redwood Road
+Napa, CA 94558
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aaf3f816299f64460f0b95af8c9341e3 = L.marker(
+                [37.98848132311168, -121.78311077784824],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_aaf3f816299f64460f0b95af8c9341e3.bindTooltip(
+                `<div>
+                     Project Name: Dutch Bros Drive Thru<br>Status: Approved, Planning Commission<br>Description: Use Permit and Design Review for a new 850 SF Dutch Bros drive-thru coffee building and new 1400 SF pad building for a future food use.<br>Applicant: Johnson Lyman Architects, 
+Gerry Nicol
+1375 Locust St, #200
+Walnut Creek, CA 94596
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81753086b55dd5ea047dc88623df8fc0 = L.marker(
+                [38.017117359166654, -121.81399045530549],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_81753086b55dd5ea047dc88623df8fc0.bindTooltip(
+                `<div>
+                     Project Name: El Campanil / Tmobile Wireless<br>Status: Approved, Planning Commission<br>Description: Rooftop Wireless Facility, UP and Variance<br>Applicant: The CBR Group, Inc
+cara@thecbrgroup.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c986f21c2ce1a90db257cbd22f932114 = L.marker(
+                [37.99822998534361, -121.75867879017784],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_c986f21c2ce1a90db257cbd22f932114.bindTooltip(
+                `<div>
+                     Project Name: Jessica Court Multifamily<br>Status: Processing<br>Description: three-building courtyard-style apartment complex with 82 dwelling units<br>Applicant: K Chaitanya Uppugunduri 
+Shoonya, LLC
+33837 6th Street 
+Union City, CA 94587
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d56e71f8c07ac95d72bf0d6787fa460 = L.marker(
+                [38.01203240986669, -121.83343764046204],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_6d56e71f8c07ac95d72bf0d6787fa460.bindTooltip(
+                `<div>
+                     Project Name: KWMA Collective LLC Cannabis Cultivation<br>Status: Under Construction<br>Description: Cannabis cultivation business<br>Applicant: KWMA Collective LLC
+kwma2021@gmail.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7bdd785b999be042bd05e7f9507bc70 = L.marker(
+                [37.973859304008144, -121.74141499397324],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_e7bdd785b999be042bd05e7f9507bc70.bindTooltip(
+                `<div>
+                     Project Name: Laurel Ranch Townhomes<br>Status: Processing<br>Description: Final Development Plan, Use Permit, Design Review for 216 unit townhome project<br>Applicant: Charles McKeag
+9160 Irvine Center Drive, Suite 100
+Irvine, CA 92618
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_819b5cf529124df30aa6560c7f21afd6 = L.marker(
+                [37.94508482188917, -121.778444468657],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_819b5cf529124df30aa6560c7f21afd6.bindTooltip(
+                `<div>
+                     Project Name: Leung Property<br>Status: Processing<br>Description: Preliminary Development Plan Application for a 435 units residential development with single family detached units, clustered single family detached units, and row townhomes.<br>Applicant: Kyle Masters
+Richland Communities
+3000 Lava Ridge Ct #115
+Roseville, CA 95661
+kmasters@richlandcommunities.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e52454853cf784afe6559874e7a0321 = L.marker(
+                [37.97469979860763, -121.79732797181605],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_0e52454853cf784afe6559874e7a0321.bindTooltip(
+                `<div>
+                     Project Name: Lone Tree Apartments<br>Status: Processing<br>Description: 245 apartment units within (5) 49-plex, 4-story buildings as well as a stand-alone 2-story community clubhouse<br>Applicant: Nicholas Ruhl / Mary Olvera 
+The Spanos Corporation 
+10100 Trinity Pkwy., 5th Floor
+Stockton, CA 95219
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c05fb8577e67553a2545cb1313f8e30 = L.marker(
+                [37.99746038103369, -121.78993420608892],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_0c05fb8577e67553a2545cb1313f8e30.bindTooltip(
+                `<div>
+                     Project Name: Mesa / Digital Display Billboard<br>Status: Approved, Planning Commission<br>Description: Use Permit application for a 40 ft. tall, 768 sq. ft. surface area digital billboard.<br>Applicant: Mike McCoy
+Mesa Outdoor LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5feb9b461fcf6ca10d26963a5ef21bc9 = L.marker(
+                [38.01172981199679, -121.779412761673],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_5feb9b461fcf6ca10d26963a5ef21bc9.bindTooltip(
+                `<div>
+                     Project Name: Natural Supplements<br>Status: Approved, City Council<br>Description: Cannabis retail, cultivation, manufacturing, distribution<br>Applicant: Natural Supplements
+19067 E Highway 120
+Ripon, CA 95366
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2942c508c2701906c6182abb3317db2 = L.marker(
+                [37.94058549733301, -121.77129912350824],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_b2942c508c2701906c6182abb3317db2.bindTooltip(
+                `<div>
+                     Project Name: Olive Groves (Albers Ranch)<br>Status: Processing<br>Description: Construct 301 units of single family homes for families and seniors. Optional assisted living facility within project.<br>Applicant: Lucia Albers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_787c0a7501208457be1701dd99f9a3f0 = L.marker(
+                [38.011866716304176, -121.84108482962532],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_787c0a7501208457be1701dd99f9a3f0.bindTooltip(
+                `<div>
+                     Project Name: One Plant Distribution & Manufacturing<br>Status: Approved, City Council<br>Description: Use Pemit application for commercial Cannabis manufacturing and distributing.<br>Applicant: Three Habitat Consulting Antioch LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_188bac05984236ebd35baa679a7e147f = L.marker(
+                [37.99953465775731, -121.78324019488188],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_188bac05984236ebd35baa679a7e147f.bindTooltip(
+                `<div>
+                     Project Name: PG&E Service Center Improvement Project<br>Status: Processing<br>Description: Master Plan for improvements to the site<br>Applicant: Richard Price, DGA for PG&E
+1720 8th St.
+Sacramento, CA 95811
+rprice@dga-mv.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_454c180ac8f09ac9f6365113c55e1f13 = L.marker(
+                [38.00622015278876, -121.75492922699443],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_454c180ac8f09ac9f6365113c55e1f13.bindTooltip(
+                `<div>
+                     Project Name: Radix Growth Cannbis<br>Status: Approved, City Council<br>Description: Commercial Cannabis Cultivation, Nursery, and Retail<br>Applicant: 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff7f3c4b3ee55e673e068a196bda2282 = L.marker(
+                [38.00935809073913, -121.76819133056613],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_ff7f3c4b3ee55e673e068a196bda2282.bindTooltip(
+                `<div>
+                     Project Name: Rancho Meadows<br>Status: Processing<br>Description: Preliminary Development Plan for General Plan Amendment, Specific Plan Amendment, Rezone to PD to subdivide 143 Single family residential lots<br>Applicant: Keri Watt | De Nova Homes 
+1500 Willow Pass Court
+Concord, CA 94520
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfb2a7a5485a8cfdbaa5bc6627efd37b = L.marker(
+                [37.9932637292127, -121.84798152755226],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_cfb2a7a5485a8cfdbaa5bc6627efd37b.bindTooltip(
+                `<div>
+                     Project Name: Rialto Place<br>Status: Approved (Administrative)<br>Description: SB 330 Preliminary Application for 108 unit single family project<br>Applicant: Albert D. Seeno Construction Co.
+4201 Port Chicago Hwy
+Concord, CA 94520
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51a7de299cb430b005b809aee3be9f0b = L.marker(
+                [37.99929372104816, -121.83875122428203],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_51a7de299cb430b005b809aee3be9f0b.bindTooltip(
+                `<div>
+                     Project Name: Savers<br>Status: <br>Description: <br>Applicant: Karen Wallace
+PM Design Group, Inc.
+19401 40th Ave, Suite 420
+Lynnwood, WA 98036
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da6709cf3c914a277dd22b3c2a7b6464 = L.marker(
+                [37.9866099550445, -121.85105908229797],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_da6709cf3c914a277dd22b3c2a7b6464.bindTooltip(
+                `<div>
+                     Project Name: Sorrento Village<br>Status: Approved (Administrative)<br>Description: SB 330 Preliminary Application for 95 unit single family project<br>Applicant: Albert D. Seeno Construction Co.
+4201 Port Chicago Hwy
+Concord, CA 94520
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca7353c4d8fc720a2c0b3d16637230ab = L.marker(
+                [37.9923560148673, -121.82294629538944],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_ca7353c4d8fc720a2c0b3d16637230ab.bindTooltip(
+                `<div>
+                     Project Name: Starbucks<br>Status: Processing<br>Description: New shell development and site development for a 2,430 s.f. Starbucks<br>Applicant: Megan Pour
+JAG Architecture 
+15 Hubble, Suite 200
+Irvine, CA 92618
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_531053a9588c2355e527a765d1158a8d = L.marker(
+                [37.98530499346957, -121.75006406732902],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_531053a9588c2355e527a765d1158a8d.bindTooltip(
+                `<div>
+                     Project Name: Su Property/Wild Horse Multifamily Project<br>Status: Approved, City Council<br>Description: Planned Development for 126 unit townhome project<br>Applicant: Philip Su
+CCP Contra Costa Investor LLC
+893 Corporate Way
+Fremont, CA 94539
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c16a8fa8577deea49e6a4fefb580ccf9 = L.marker(
+                [37.94909647558793, -121.80091813702776],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_c16a8fa8577deea49e6a4fefb580ccf9.bindTooltip(
+                `<div>
+                     Project Name: The Ranch<br>Status: Approved, City Council<br>Description: 1,177 single family units and commercial<br>Applicant: Kyle Masters
+Richland Planned Communities, Inc.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d41957aa30258e06694243fd03f4b02c = L.marker(
+                [37.94909647558793, -121.80091813702776],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_d41957aa30258e06694243fd03f4b02c.bindTooltip(
+                `<div>
+                     Project Name: The Ranch Phase I<br>Status: Approved, City Council<br>Description: Tentative map, use permit and design review application for 440 lots as part of The Ranch Phase 1.<br>Applicant: Kyle Masters
+Richland Planned Communities 
+kmasters@richlandcommunities.com
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_789ea67e3e8be1f5eff5d8d3f5ee456b = L.marker(
+                [37.98633868296692, -121.7802357937048],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_789ea67e3e8be1f5eff5d8d3f5ee456b.bindTooltip(
+                `<div>
+                     Project Name: Travis Credit Union<br>Status: Under Construction<br>Description: New construction of a 3525 Sf bank branch with drive-through<br>Applicant: Travis Credit Union
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63fef6ee2578f35934faa095d2b4d9a0 = L.marker(
+                [37.99875785259591, -121.76327189945924],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_63fef6ee2578f35934faa095d2b4d9a0.bindTooltip(
+                `<div>
+                     Project Name: Vineyard Crossings<br>Status: Processing<br>Description: 71 two-story, single-family residences and 70 accessory dwelling units (ADUs) on 71 residential lots<br>Applicant: Reggie Decker 
+BrightSky Residential 
+1255 Treat Blvd., Unit 300
+Walnut Creek, CA 94597
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1771e014aad7567dd81e7a1b2b810106 = L.marker(
+                [37.96338982757577, -121.76206820984352],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_1771e014aad7567dd81e7a1b2b810106.bindTooltip(
+                `<div>
+                     Project Name: Wal-Mart<br>Status: Processing<br>Description: 7,250 sq. ft. addition, façade changes<br>Applicant: BRR Architecture
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84a66c5906a49c6efd5cbde40f7840d5 = L.marker(
+                [37.99150676753321, -121.78340566781006],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_84a66c5906a49c6efd5cbde40f7840d5.bindTooltip(
+                `<div>
+                     Project Name: Wildflower Townhomes 2<br>Status: Processing<br>Description: SB 330 Preliminary Application, Vesting Tentative Map for Condominium Purposes and Design Review for 168 unit townhome project.<br>Applicant: Kathryn Watt
+DeNova Homes
+1500 Willow Pass Road
+Concord, CA 94520
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_930449a184133feefdbf138eb93f4a5e = L.marker(
+                [37.9464489563629, -121.80906795660364],
+                {}
+            ).addTo(map_fb75a35b1f5c86249e902662e630cf55);
+        
+    
+            marker_930449a184133feefdbf138eb93f4a5e.bindTooltip(
+                `<div>
+                     Project Name: Zeka Ranch<br>Status: Processing<br>Description: Preliminary Development Application for 314 single family homes<br>Applicant: The Zeka Group Inc.
+1110 Burlingame Avenue, Suite 211, 
+Burlingame, CA 94010
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
