@@ -79,6 +79,7 @@ proj_df["APN"] = apn_list
 proj_df = pd.merge(proj_df, apn_df[["APN", "Longitude", "Latitude"]], on="APN", how="left")
 proj_df.dropna(subset=["Longitude", "Latitude"], inplace=True)
 ```
+Lastly, I created the map and added all of the remaining projects, along with each project's name, status, description, and applicant using my tooltip function.
 ```python
 antioch_map = folium.Map(location=[37.9755272, -121.8215628],
                          zoom_start=13,
