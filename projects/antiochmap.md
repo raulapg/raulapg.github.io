@@ -21,11 +21,11 @@ df.to_csv("ANT_APNs.csv", index=False)
 ```
 
 ```python
-import re
-import requests
-import pandas as pd
 from bs4 import BeautifulSoup
 import folium
+import pandas as pd
+import re
+import requests
 
 
 def apn_search(proj_location):
@@ -60,7 +60,6 @@ proj_df = pd.DataFrame(data, columns=["Use Type", "Project Name", "Project Numbe
                                       "Description", "Status", "Applicant", "Plans",
                                       "Project Description", "Other"])
 proj_df = proj_df.drop(["Plans", "Project Description", "Other"], axis=1)
-#proj_df = pd.read_csv("test.csv")
 proj_df["APN"] = ""
 
 apn_df = pd.read_csv("ANT_APNs.csv")
