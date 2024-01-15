@@ -6,7 +6,7 @@ permalink: /projects/antiochmap
 ## Background
 
 ## Process
-Since not all of the projects had addresses, I decided to go with Assessor Parcel Numbers that almost all of the projects had. I sourced the parcel information from the [Contra Costa County Assessor](https://www.contracosta.ca.gov/552/Maps-Property-Information), which provided the shapefile for the parcels in the county but not the coordinates of each one. This is where I needed to use the Geopandas library to find the coordinates for each parcel and then drop the shapefile info and select only the parcels located within Antioch to save space.
+Since not all of the projects had addresses, I decided to go with Assessor Parcel Numbers that almost all of the projects had. I sourced the parcel information from the [Contra Costa County Assessor](https://www.contracosta.ca.gov/552/Maps-Property-Information), which provided the shapefile for the parcels in the county but not the coordinates of each one. This is where I needed to use the Geopandas library to find the coordinates for each parcel and then drop the shapefile column and select only the parcels located within Antioch to save space.
 ```python
 import geopandas as gpd
 
