@@ -41,7 +41,7 @@ def tooltip(proj_name, status, description, applicant):
            f"Description: {description}<br>" \
            f"Applicant: {applicant}"
 ```
-
+Next I used the requests library to load the page and then had BeautifulSoup find the table information and convert it to an appropriate format for my dataframe.
 ```python
 url = "https://www.antiochca.gov/community-development-department/planning-division/current-projects/"
 response = requests.get(url)
@@ -62,7 +62,8 @@ proj_df = pd.DataFrame(data, columns=["Use Type", "Project Name", "Project Numbe
                                       "Project Description", "Other"])
 proj_df = proj_df.drop(["Plans", "Project Description", "Other"], axis=1)
 proj_df["APN"] = ""
-
+```
+```python
 apn_df = pd.read_csv("ANT_APNs.csv")
 
 apn_list = []
