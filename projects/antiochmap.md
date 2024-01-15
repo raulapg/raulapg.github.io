@@ -1,6 +1,6 @@
 ---
-title: Building Projects in Antioch, CA
-description: Map of building projects in Antioch, CA using Python
+title: Development Projects in Antioch, CA
+description: Map of development projects in Antioch, CA using Python
 permalink: /projects/antiochmap
 ---
 ## Background
