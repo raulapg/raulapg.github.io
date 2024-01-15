@@ -93,6 +93,7 @@ for index, row in proj_df.iterrows():
 
 antioch_map.save("antioch_map.html")
 ```
+There were a few issues that came up during this project that resulted in not all of the projects being accurately displayed. The biggest issue was that some of the projects on the city's website did not have APNs that matched up with the county's database. This resulted in about ten projects not displaying, mainly residential projects. I believe that these APNs have not been processed by the county yet and will eventually be valid. The smaller issue I noticed was that one of the projects had the incorrect APN, specifically the new Chick-fil-A which was showing up in a residential neighborhood when it should be located at Lone Tree Way and State Route 4.
 ## The Final Result
 {{< rawhtml >}}
 <iframe src="https://rapg.me/projects/files/antioch_map.html"
