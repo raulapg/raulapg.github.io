@@ -63,6 +63,7 @@ proj_df = pd.DataFrame(data, columns=["Use Type", "Project Name", "Project Numbe
 proj_df = proj_df.drop(["Plans", "Project Description", "Other"], axis=1)
 proj_df["APN"] = ""
 ```
+From there, I loaded up the file of APN coordinates that I created in the first step and created a loop that used my apn_search function to convert the APN from the city website to match the county's and handle any missing values. I then merged my two dataframes to add the coordinates to my dataframe containing the city projects and dropped any projects missing coordinates, since they could not be displayed.
 ```python
 apn_df = pd.read_csv("ANT_APNs.csv")
 
@@ -77,7 +78,8 @@ proj_df["APN"] = apn_list
 
 proj_df = pd.merge(proj_df, apn_df[["APN", "Longitude", "Latitude"]], on="APN", how="left")
 proj_df.dropna(subset=["Longitude", "Latitude"], inplace=True)
-
+```
+```python
 antioch_map = folium.Map(location=[37.9755272, -121.8215628],
                          zoom_start=13,
                          tiles="OpenStreetMap")
