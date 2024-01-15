@@ -19,7 +19,7 @@ df = df.loc[df["S_CTY_ABBR"] == "ANT"]
 
 df.to_csv("ANT_APNs.csv", index=False)
 ```
-
+To start off, I imported the necessary libraries and created my functions: the first using regular expressions to find the APN and convert to the proper format and the second to create the map tooltip for each project.
 ```python
 from bs4 import BeautifulSoup
 import folium
@@ -40,8 +40,9 @@ def tooltip(proj_name, status, description, applicant):
            f"Status: {status}<br>" \
            f"Description: {description}<br>" \
            f"Applicant: {applicant}"
+```
 
-
+```python
 url = "https://www.antiochca.gov/community-development-department/planning-division/current-projects/"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
