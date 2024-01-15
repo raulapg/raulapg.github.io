@@ -4,7 +4,7 @@ description: Map of development projects in Antioch, CA using Python
 permalink: /projects/antiochmap
 ---
 ## Background
-
+Recently I found out that cities listed planned development projects on their websites, so I decided to take a look at my [city's website](https://www.antiochca.gov/community-development-department/planning-division/current-projects/) and those of neighboring cities. While my city listed all of the projects in a nice table, I found it difficult to know where these projects would be located since many of them only listed an Assessor Parcel Number (APN). This was in contrast to a neighboring city that visualized all of their projects on a map using ArcGIS, so I decided: why not make something like that for my city?
 ## Process
 Since not all of the projects had addresses, I decided to go with Assessor Parcel Numbers that almost all of the projects had. I sourced the parcel information from the [Contra Costa County Assessor](https://www.contracosta.ca.gov/552/Maps-Property-Information), which provided the shapefile for the parcels in the county but not the coordinates of each one. This is where I needed to use the Geopandas library to find the coordinates for each parcel and then drop the shapefile column and select only the parcels located within Antioch to save space.
 ```python
